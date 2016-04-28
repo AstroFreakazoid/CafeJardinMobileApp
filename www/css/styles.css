@@ -1,0 +1,6 @@
+
+div > p > strong {
+  color: white;
+  font-size: 1.4em;
+  font-stretch: inherit;
+}

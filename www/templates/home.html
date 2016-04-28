@@ -1,5 +1,5 @@
 <ion-view title="Home" id="page1" style="background-color:forestgreen;" hide-nav-bar="true">
-    <ion-content padding="true" class="has-header">
+    <ion-content padding="true" scroll="false" class="has-header">
         <h3 id="home-heading3" style="color:#ECF0F1;text-align:center">Bienvenidos!</h3>
         <div id="home-markdown6" style="color:#D1D1D1;">
             <p>Nuestros cuerpos son nuestros jardines, nuestras voluntades son nuestros jardineros...
@@ -12,16 +12,16 @@
         <ion-list>
           <ion-item class="item-thumbnail-left" ui-sref="cafJardN.contacto">
             <img src="img/nWBYPVMT0qAxhL2Mzbgd_2887848846_22da6343e6_z.jpg">
-            <h2>Jardinera</h2>
+            <h2>Jardinera en Cafe Jardin SR</h2>
             <p>Cecilia Castro Ugalde</p>
+            <p>www.cafeJardinSR.com</p>
           </ion-item>
         </ion-list>
-        <div class="spacer" style="width: 283px; height: 5px;"></div>
-        <div class="button-bar">
-          <button class="button ion-home"></button>
-          <a class="button">Second</a>
-          <a class="button">Third</a>
-        </div>
         <a ui-sref="cafJardN.acercaDe" id="home-button9" class="button button-assertive  button-block">Continuar!</a>
+        <div class="button-bar">
+          <a class="button button-icon icon ion-person" ui-sref="cafJardN.contacto"></a>
+          <a class="button button-icon icon ion-home" ui-sref="cafJardN.prXimosEventos"></a>
+          <a class="button button-icon icon ion-ios-location" ui-sref="cafJardN.ubicacion"></a>
+        </div>
     </ion-content>
 </ion-view>

@@ -30,22 +30,21 @@ angular.module('app.controllers', ['ionic', 'ion-gallery'])
 })
 
 .controller('galeriaDeFotosCtrl', function($scope) {
-
-  $scope.items = [
-    {
-      src:'http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg',
-      sub: 'This is a <b>subtitle</b>'
-    },
-    {
-      src:'http://www.gettyimages.co.uk/CMS/StaticContent/1391099215267_hero2.jpg',
-      sub: '' /* Not showed */
-    },
-    {
-      src:'http://www.hdwallpapersimages.com/wp-content/uploads/2014/01/Winter-Tiger-Wild-Cat-Images.jpg',
-      thumb:'http://www.gettyimages.co.uk/CMS/StaticContent/1391099215267_hero2.jpg'
-    }
+  // thumb:'root'
+  $scope.plants = [
+    { src:'img/plants/1.jpg', sub: '<b>Top 1</b>' },
+    { src:'img/plants/2.jpg', sub: '<b>Top 2</b><br />Orquidea Flor Blanca' },
+    { src:'img/plants/3.jpg', sub: '<b>Top 3</b>' },
+    { src:'img/plants/4.jpg', sub: '<b>Top 4</b>' },
+    { src:'img/plants/5.jpg', sub: '<b>Top 6</b>' },
+    { src:'img/plants/6.jpg', sub: '<b>Top 7</b>' },
+    { src:'img/plants/7.jpg', sub: '<b>Top 8</b>' },
+    { src:'img/plants/8.jpg', sub: '<b>Top 9</b>' },
+    { src:'img/plants/9.jpg', sub: '<b>Top 10</b>' },
+    { src:'img/plants/10.jpg', sub: '<b>Top 11</b>' },
+    { src:'img/plants/11.jpg', sub: '<b>Top 12</b>' },
+    { src:'img/plants/12.jpg', sub: '<b>Top 13</b>' }
   ]
-  
 })
 
 .controller('ubicacionCtrl', function($scope) {

@@ -1,8 +1,6 @@
 <ion-view title="Próximos Eventos" id="page4">
     <ion-content padding="true" class="has-header">
-		
 		<div class="list card">
-
 		  <div class="item">
 		    <h2>Exposición de orquídeas</h2>
 		    <p>1 de Mayo, 2016</p>
@@ -13,29 +11,22 @@
 		    <p>
 		      Orquídeas
 		    </p>
-
-		    <button class="button button-block button-dark" ng-click="showAlert()">
- 				 Ubicación
+		    <button class="button button-block button-dark" ng-click="showConfirm()">
+ 				 Aceptar Invitacion
 			</button>
 		  </div>
-
 		</div>
-
-		<div class="list card">
-
-		  <div class="item">
-		    <h2>Exposición de orquídeas</h2>
-		    <p>1 de Mayo, 2016</p>
-		  </div>
-
-		  <div class="item item-body">
-		    <img class="full-image" src="img/orquideasjabon.jpg">
-		    <p>
-		      Orquídeas
-		    </p>
-		  </div>
-
-		</div>	
-
+		<div class="text-center">
+			<ion-spinner icon="ripple"></ion-spinner>
+		</div>
 	</ion-content>
+	<ion-footer-bar align-title="left" class="bar-assertive">
+	  <div class="buttons">
+	    <button class="button">Left Button</button>
+	  </div>
+	  <h1 class="title">Cafe Jardin!</h1>
+	  <div class="buttons" ng-click="doSomething()">
+	    <button class="button"> <ion-spinner icon="lines"></ion-spinner> </button>
+	  </div>
+	</ion-footer-bar>
 </ion-view>

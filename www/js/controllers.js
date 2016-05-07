@@ -16,17 +16,21 @@ angular.module('app.controllers', ['ionic', 'ion-gallery'])
 
 .controller('prXimosEventosCtrl', function($scope, $ionicPopup, $timeout) {
 
-	$scope.showAlert = function() {
-	  	var alertPopup = $ionicPopup.alert({
-			title: 'Hi, this is a test',
-			template: 'YOLO, LOLOLOL'
-			//cssClass: 'alertUpcoming'//Here we add the class to the alert -> not working
-		});
+    $scope.showConfirm = function() {
+       var confirmPopup = $ionicPopup.confirm({
+       title: 'Quieres acompañarnos este dia?',
+       template: 'Recibiras regalos de parte de Cafe Jardin!'
+     });
 
-		alertPopup.then(function(res) {
-			console.log('Thank you for not eating my delicious ice cream cone');
-		});
-	};
+     confirmPopup.then(function(res) {
+       if(res) {
+         console.log('CONFIRM');
+       } else {
+         console.log('CANCEL');
+       }
+     });
+    };
+
 })
 
 .controller('galeriaDeFotosCtrl', function($scope) {
